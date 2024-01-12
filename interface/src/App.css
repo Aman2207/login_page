@@ -1,0 +1,124 @@
+.Body{
+  background-image: url("./image/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.Text{
+  padding-top: 50px;
+}
+
+.Welcome{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  font-size: 60px;
+  font-weight: bold;
+  margin-left: 40px;
+}
+
+.React{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 5px white;
+  font-size: 100px;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-left: 40px;
+}
+
+.Container{
+  background-color: rgb(156, 155, 155);
+  height: 400px;
+  width: 350px;
+  background: rgba(200,200,200,0.5);
+  border-radius: 20px;
+  border-color: white;
+  border-width: 5px;
+  border-style: solid;
+  margin: -150px 0 200px 700px;
+}
+
+.Login{
+  margin-top: 50px;
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 300px;
+  align-items: center;
+}
+
+.Partition{
+  display: flex;
+  flex-direction: row;
+  align-content: space-evenly;
+  align-content: flex-end;
+  font-size: 14px;
+  align-items: baseline;
+  margin-top: 10px;
+}
+
+.left{
+  padding-left: 30px;
+}
+
+#nxt{
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  color: black;
+  align-items: baseline;
+}
+
+#log{
+  color: rgb(74, 74, 74);
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#mail{
+  margin-top: 40px;
+  height: 30px;
+  width: 250px;
+  border-radius: 15px;
+  border-color: white;
+  border-style: solid;
+  padding-left: 10px;
+}
+
+#pass{
+  margin-top: 10px;
+  height: 30px;
+  width: 250px;
+  border-radius: 15px;
+  border-color: white;
+  border-style: solid;
+  padding-left: 10px;
+}
+
+#btn{
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  margin-top: 40px;
+  height: 35px;
+  width: 260px;
+  border-radius: 15px;
+  border-color: white;
+  border-style: solid;
+  align-items: center;
+}
+
+#btn:hover{
+  background-color: rgb(64, 159, 241);
+  color: white;
+  border-color: rgb(64, 159, 241);
+  border-style: solid;
+}
+
+#signup{
+  font-size: 14px;
+  margin-top: 10px;
+}
