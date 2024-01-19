@@ -1,0 +1,18 @@
+<div className="Partition">
+    <div><input type="checkbox" />Remember me</div>
+    <div className="left">Forgot Password?</div>
+</div>
+
+.Partition{
+  display: flex;
+  flex-direction: row;
+  align-content: space-evenly;
+  align-content: flex-end;
+  font-size: 14px;
+  align-items: baseline;
+  margin-top: 10px;
+}
+
+.left{
+  padding-left: 30px;
+}
