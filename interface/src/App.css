@@ -294,3 +294,187 @@
   border-color: rgb(64, 159, 241);
   border-style: solid;
 }
+
+/* Chat Bot */
+
+.bot{
+  margin-top: -200px;
+  margin-left: 40px;
+}
+
+#botpic{
+  background-image: url("./image/bot_6819650.png");
+  background-size: 55px 50px;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 55px;
+  cursor: pointer;
+}
+
+@keyframes blink {
+  0%   {height: 0px; border-radius: 3px;}
+  25%  {height: 6px; border-radius: 3px;}
+  50%  {height: 0px; border-radius: 3px;}
+  75%  {height: 0px; border-radius: 3px;}
+  100% {height: 0px; border-radius: 3px;}
+}
+
+#eye1{
+  position: absolute;
+  background-color: rgb(66, 66, 66);
+  width: 25px;
+  margin-top: 26px;
+  margin-left: 15px;
+  animation-name: blink;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.msgbox{
+  margin-top: -100px;
+  margin-left: 75px;
+}
+
+@keyframes boxgrow {
+  0%   {height: 0px; width: 0px; border-radius: 0px;}
+  25%  {height: 60px; width: 150px; border-radius: 10px; background-color: lightgray; border: 3px solid whitesmoke;}
+  50%  {height: 60px; width: 150px; border-radius: 10px; background-color: lightgray; border: 3px solid whitesmoke;}
+  75%  {height: 60px; width: 150px; border-radius: 10px; background-color: lightgray; border: 3px solid whitesmoke;}
+  100% {height: 60px; width: 150px; border-radius: 10px; background-color: lightgray; border: 3px solid whitesmoke;}
+}
+
+#botwrite{
+  position: relative;
+  z-index: 1;
+  animation-name: boxgrow;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  padding: 5px 10px 5px 10px;
+  font-size: 14px;
+}
+
+@keyframes kink {
+  0%   {border-top: 0px solid transparent; border-right: 0px solid transparent;}
+  25%  {border-top: 15.5px solid transparent; border-right: 25px solid whitesmoke;}
+  50%  {border-top: 15.5px solid transparent; border-right: 25px solid whitesmoke;}
+  75%  {border-top: 15.5px solid transparent; border-right: 25px solid whitesmoke;}
+  100% {border-top: 15.5px solid transparent; border-right: 25px solid whitesmoke;}
+}
+
+#triangle-left{
+  width: 0;
+  height: 0;
+  margin-top: -15px;
+  margin-left: -12.5px;
+  animation-name: kink;
+  animation-duration: 10s;
+  animation-delay: 2s;
+}
+
+.chatbot{
+  position: relative;
+  z-index: 5;
+  background: white;
+  margin-top: -225px;
+  margin-left: 60px;
+  height: 300px;
+  width: 400px;
+  border: 3px solid lightgrey;
+  border-radius: 10px;
+  padding: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#ask{
+  font-family: 'Impact';
+  font-size: large;
+  padding-left: 10px;
+  padding-top: 5px;
+  height: 25px;
+  color: rgb(41, 41, 41);
+  background: rgb(64, 159, 241);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.messages{
+  height: 200px;
+  margin-top: 2px;
+  overflow-y: auto;
+  padding: 10px;
+  background: whitesmoke;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Calibri';
+}
+
+.message{
+  padding: 5px 10px;
+  border-radius: 12.5px;
+  margin: 5px 0;
+  max-width: 75%;
+  word-wrap: break-word;
+}
+
+.user-msg{
+  background-color: lightskyblue;
+  align-self: flex-end;
+  text-align: left;
+}
+
+.bot-msg{
+  background-color: rgb(178, 178, 178);
+  align-self: flex-start;
+  text-align: left;
+}
+
+form{
+  display: flex;
+}
+
+#chat{
+  margin-left: 10px;
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  margin-right: 0px;
+  outline: none;
+}
+
+#send{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(64, 159, 241);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: bold;
+}
+
+#send:hover{
+  background-color: rgb(5, 133, 244);
+}
+
+/* Scrollbar */
+
+.messages::-webkit-scrollbar{
+  width: 8px;
+}
+
+.messages::-webkit-scrollbar-track{
+  background: whitesmoke;
+}
+
+.messages::-webkit-scrollbar-thumb{
+  background: lightskyblue;
+}
+
+.messages::-webkit-scrollbar-thumb:hover{
+  background: rgb(40, 151, 219);
+}

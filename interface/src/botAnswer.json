@@ -1,0 +1,18 @@
+{
+    "responses": [
+        {
+            "keywords": ["hello", "hi", "hey"],
+            "response": "Hi ! How can I help you ?"
+        },
+        {
+            "keywords": ["goodbye", "bye"],
+            "response": "Goodbye! Have a nice day."
+        },
+        {
+            "keywords": ["help", "support"],
+            "response": "Sure, for what matter I can assist you with ?"
+        }
+    ]
+
+
+}
